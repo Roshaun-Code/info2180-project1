@@ -1,11 +1,280 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
+    padding: 0;
     font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-size: 18px;
+}
+
+header .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header .container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-between;
+    margin: 5px;
+}
+
+nav a{
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+nav a:hover{
+    color: #5A67D8;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    text-decoration: none;
+    color: black;
+}
+
+.overview-hero{
+    background-color: #E2E8F0;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.overview-hero img{
+    float: left;
+    margin-right: 25px;
+}
+
+.learn-about h2{
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.learn-about h3{
+    color: #48BB78;
+    font-size: 21px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    min-height: 450px;
+}
+
+.card img{
+    display: flex;
+    margin-top: 10px;
+    justify-self: center;
+    align-self: center;
+}
+
+.card-body{
+    display: grid;
+    grid-template-rows: 1fr 150px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: max-content;
+    
+    
+}
+
+.card-body h3{
+    display: flex;
+    justify-self: center;
+    vertical-align: top;
+}
+
+.card-body p{
+    display: flex;
+    align-self: flex-start;
+}
+
+.testing{
+    background-color: #4A5568;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testing h2{
+    color: white;
+}
+
+.testing p{
+    color: white;
+}
+
+.testing .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    background-color: #48BB78;
+    list-style-type: none;
+    height: 50px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.stories{
+    padding: 100px;
+}
+
+.stories article{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 15px;
+
+}
+
+.stories .container h2{
+    color: #5A67D8;
+}
+
+.stories article p{
+    color: black;
+}
+
+.stories article a{
+    text-decoration: none;
+    color: #5A67D8;
+}
+
+.stories article img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.newsletter{
+    background-color: #48BB78;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+}
+
+.newsletter .container h3{
+    color: white;
+}
+
+.newsletter .container p{
+    color: white;
+    overflow-wrap: break-word;
+}
+
+.newsletter .container form{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    
+}
+
+.newsletter .container .btn{
+    background-color: #5A67D8;
+    height: 100%;
+}
+
+.form-group input{
+    width: 97%;
+    height: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    border-style: none;
+    
+}
+
+.message{
+    color: white;
+}
+
+footer{
+    height: 75px;
+    background-color: #4A5568;
+    display: flex;
+    align-items: center;
+
+}
+
+footer p{
+    color: white;
 }
